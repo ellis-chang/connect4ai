@@ -35,7 +35,7 @@ class GameRunner:
     
     def loop(self):
         while True:
-            game_over = self.game.game_over(1)
+            game_over = self.game.game_over(1) or self.game.game_over(2)
             if game_over:
                 self.auto = False
             
